@@ -1,5 +1,5 @@
 const path = require("path");
-let name = "app";
+let name = "index";
 
 module.exports = {
   entry: `./src/${name}.tsx`,
@@ -9,10 +9,6 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"],
-      },
       {
         test: /\.(js|jsx|ts|tsx)$/,
         use: "babel-loader",
